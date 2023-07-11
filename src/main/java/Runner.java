@@ -1,3 +1,4 @@
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -56,18 +57,18 @@ public class Runner {
         System.out.println("Running shopping trolley tasks...");
 
         // 1. Create a new shopping trolley
-//        ShoppingTrolley trolley = <INSTANTIATE A NEW SHOPPINGTROLLEY OBJECT HERE>;
+       ShoppingTrolley trolley = new ShoppingTrolley();
 
         // 2. Add an item to the trolley
-//        <CALL YOUR METHOD HERE>;
+        trolley.addToTrolley("pork");
 
         // 3. Count items in the trolley
-//        int itemCount = <CALL YOUR METHOD HERE>;
-//        System.out.println("The trolley contains " + itemCount + " items.");
+       int itemCount = trolley.countItems();
+       System.out.println("The trolley contains " + itemCount + " items.");
 
         // 4. Check if an item is in the trolley
-//        boolean itemInTrolley = <CALL YOUR METHOD HERE>;
-//        System.out.println("Object is a square (true/false): " + itemInTrolley);
+       boolean itemInTrolley = trolley.checkItem("cheese");
+       System.out.println("Object is a square (true/false): " + itemInTrolley);
     }
 
 
