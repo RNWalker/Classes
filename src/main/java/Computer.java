@@ -23,4 +23,15 @@ public class Computer {
         return modelPrinter;
     }
 
-}
+   String printMessage() {
+       if (modelPrinter != null) {
+           System.out.println("you have a printer connected");
+       }
+
+       return null;
+   }
+
+   }
+
+
+
