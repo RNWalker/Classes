@@ -12,7 +12,7 @@ public class Rectangle {
         this.isSquare = false;
 
     }
-    int area (){ return length*width;};
+    int area (){ return length*width;}
     boolean isSquare() {
         if (length == width){
             return true;

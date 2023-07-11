@@ -27,17 +27,17 @@ public class Runner {
         System.out.println("Running computer tasks...");
 
         // 1. Create a new computer object
-//        Computer computer = <INSTANTIATE A NEW COMPUTER OBJECT HERE>
+        Computer computer = new Computer(6, "epson");
 
         // 2. Use a getter to find out how much storage the computer has
-//        int currentStorage = <CALL YOUR METHOD HERE>;
-//        System.out.println("Computer has " + currentStorage + "GB storage");
+       int currentStorage = computer.getStorageSpace();
+       System.out.println("Computer has " + currentStorage + "GB storage");
 
         // 3. Add more storage to the computer
-//        <CALL YOUR METHOD HERE>;
+        computer.storageAdd();
         // We use the getter again to check that the amount of storage has been updated
-//        int newStorage = computer.getStorage();
-//        System.out.println("Computer now has " + newStorage + "GB storage");
+       int newStorage = computer.getStorageSpace();
+       System.out.println("Computer now has " + newStorage + "GB storage");
 
         // 4. Use a setter to update the computer's printer property
 //        <CALL YOUR METHOD HERE>
